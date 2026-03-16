@@ -1,0 +1,13 @@
+<h2>Galería</h2>
+
+<div class="gallery">
+
+<ng-container *ngFor="let img of images">
+
+<img
+*ngIf="img.resolutions"
+[src]="img.resolutions?.medium?.url || img.resolutions?.original?.url">
+
+</ng-container>
+
+</div>

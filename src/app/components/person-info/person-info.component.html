@@ -1,0 +1,23 @@
+<section *ngIf="person" class="person-section">
+
+<h2>Persona</h2>
+
+<div class="person-card">
+
+<img [src]="person.image?.original">
+
+<div class="person-data">
+
+<p><strong>Nombre:</strong> {{person.name}}</p>
+
+<p><strong>Género:</strong> {{person.gender}}</p>
+
+<p><strong>País:</strong> {{person.country?.name}}</p>
+
+<p><strong>Cumpleaños:</strong> {{person.birthday}}</p>
+
+</div>
+
+</div>
+
+</section>

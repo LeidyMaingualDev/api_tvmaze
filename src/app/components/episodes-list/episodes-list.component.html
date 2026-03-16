@@ -1,0 +1,15 @@
+<h2>Episodios</h2>
+
+<div class="episodes">
+
+<div class="episode-card" *ngFor="let ep of episodes">
+
+<h4>{{ep.name}}</h4>
+
+<p>Temporada {{ep.season}} - Episodio {{ep.number}}</p>
+
+<img *ngIf="ep.image" [src]="ep.image.medium">
+
+</div>
+
+</div>

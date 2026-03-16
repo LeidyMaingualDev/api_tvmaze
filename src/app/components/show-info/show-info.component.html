@@ -1,0 +1,25 @@
+<section *ngIf="show" class="show-container">
+
+  <div class="show-card">
+
+    <div class="poster">
+      <img [src]="show.image?.original" alt="poster">
+    </div>
+
+    <div class="show-info">
+
+      <h2>{{show.name}}</h2>
+
+      <p><strong>Idioma:</strong> {{show.language}}</p>
+
+      <p><strong>Géneros:</strong> {{show.genres.join(', ')}}</p>
+
+      <p><strong>Rating:</strong> {{show.rating?.average}}</p>
+
+      <div class="summary" [innerHTML]="show.summary"></div>
+
+    </div>
+
+  </div>
+
+</section>

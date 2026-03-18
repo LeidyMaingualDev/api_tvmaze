@@ -6,39 +6,43 @@
 .show-card{
  display:flex;
  gap:30px;
- background:white;
- padding:20px;
- border-radius:10px;
- box-shadow:0 2px 8px rgba(0,0,0,0.1);
- max-width:900px;
+ background:#020617;
+ padding:25px;
+ border-radius:12px;
+ box-shadow:0 4px 20px rgba(0,0,0,0.6);
+ max-width:950px;
+ border:1px solid rgba(255,255,255,0.05);
 }
 
 .poster img{
- width:250px;
- border-radius:8px;
+ width:260px;
+ border-radius:10px;
 }
 
 .show-info{
  flex:1;
 }
 
+.show-info p{
+ margin:8px 0;
+ color:#cbd5f5;
+}
+
 .summary{
  margin-top:10px;
  line-height:1.6;
+ color:#94a3b8;
 }
 
-/* RESPONSIVE */
-
+/* responsive */
 @media (max-width:768px){
+  .show-card{
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
 
-.show-card{
- flex-direction:column;
- align-items:center;
- text-align:center;
-}
-
-.poster img{
- width:200px;
-}
-
+  .poster img{
+    width:200px;
+  }
 }

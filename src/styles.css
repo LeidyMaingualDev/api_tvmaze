@@ -1,24 +1,30 @@
 body{
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
-  background:#f4f6f9;
-  color:#333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#0f172a; /* azul oscuro */
+  color:#e2e8f0;
 }
 
+/* HEADER */
 h1{
   text-align:center;
   padding:20px;
-  background:#1e293b;
-  color:white;
+  background:#020617;
+  color:#f1f5f9; /* acento */
   margin:0;
+  font-weight:600;
+  letter-spacing:1px;
 }
 
+/* SUBTÍTULOS */
 h2{
   text-align:center;
   margin-top:40px;
-  color:#1e293b;
+  color:#f1f5f9;
+  font-weight:500;
 }
 
+/* CONTENEDORES */
 section{
-  padding:20px;
+  padding:30px 20px;
 }

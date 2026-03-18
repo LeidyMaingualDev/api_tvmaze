@@ -7,39 +7,44 @@
 }
 
 .episode-card{
- background:white;
- border-radius:8px;
- box-shadow:0 2px 6px rgba(0,0,0,0.15);
- padding:10px;
- width:200px;
+ background:#020617;
+ border-radius:10px;
+ box-shadow:0 4px 15px rgba(0,0,0,0.6);
+ padding:12px;
+ width:220px;
  text-align:center;
- transition:transform 0.3s;
+ transition:all 0.3s;
+ border:1px solid rgba(255,255,255,0.05);
 }
 
 .episode-card:hover{
- transform:translateY(-5px);
+ transform:translateY(-6px);
+ box-shadow:0 6px 20px rgba(244,63,94,0.3);
+}
+
+.episode-card h4{
+ color:#8d2c3b;
+}
+
+.episode-card p{
+ color:#94a3b8;
 }
 
 .episode-card img{
  width:100%;
- border-radius:6px;
- margin-top:5px;
+ border-radius:8px;
+ margin-top:8px;
 }
 
 /* responsive */
-
 @media (max-width:768px){
-
-.episode-card{
- width:45%;
-}
-
+  .episode-card{
+    width:45%;
+  }
 }
 
 @media (max-width:480px){
-
-.episode-card{
- width:90%;
-}
-
+  .episode-card{
+    width:90%;
+  }
 }
